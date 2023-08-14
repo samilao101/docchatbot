@@ -28,7 +28,7 @@ if "char_answers_history" not in st.session_state:
 
 if prompt:
 
-    gsar_prompt = f"Use the following context below to answer question '{prompt}'. Do not make up answers and only respond to questions relevant to to the context. /n/n context: {file_content}"
+    gsar_prompt = f"Use the following context below to answer question '{prompt}' (Please use markdown to make the response easier to read). Do not make up answers and only respond to questions relevant to to the context. /n/n context: {file_content}"
 
     with st.spinner("Generating response..."):
         generated_response = openai.ChatCompletion.create(
