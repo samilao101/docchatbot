@@ -8,7 +8,7 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = OPENAI_API_KEY
 
-file_path = '/Users/sam/Desktop/readdocs/docchatbot/chatbotwrapper/GSARs.txt'
+file_path = 'GSARs.txt'
 
 with open(file_path, 'r') as file:
     file_content = file.read()
